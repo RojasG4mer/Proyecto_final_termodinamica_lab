@@ -38,7 +38,7 @@ except KeyboardInterrupt:
 serialArduino.close()
 
 df['Tiempo'] = df['Tiempo']/1000 # Cambiamos de milisegundos a segundos
-df.to_csv("Prueba_01_04.csv", index=False) #Guardamos los datos en csv
+df.to_csv("Prueba_01_06.csv", index=False) #Guardamos los datos en csv
 
 ## Graficamos los datos obtenidos
 plt.scatter(df['Tiempo'], df['Temperatura'], color = 'g')
